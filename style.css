@@ -21,7 +21,7 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -1;
-  filter: grayscale();
+  filter: none;
 }
 
 .hero {
@@ -38,6 +38,7 @@ body {
 .hero h1 {
   font-family: 'Sacramento', cursive;
   font-size: 6rem;
+  color: black;
 }
 
 .hero h4 {
@@ -421,6 +422,8 @@ footer li {
 
   .simply-countdown > .simply-section {
     padding: 70px;
+    color: black;
+    background-color: blanchedalmond;
   }
 
   .home .heart {
@@ -462,9 +465,13 @@ footer li {
   html {
     font-size: 65%;
   }
+    .hero::before{
+    background-image: url(img/phone.png);}
 
   .simply-countdown > .simply-section {
     padding: 60px;
+    color: black;
+    background-color: blanchedalmond;
     margin: 5px;
   }
 
@@ -486,16 +493,14 @@ footer li {
 /* mobile phone */
 @media (max-width: 576px) {
   html {
-    font-size: 60%;
-    background-image: url(img/phone.png);
-
+    font-size: 47 %;
   }
 
   .simply-countdown > .simply-section {
-    padding: 45px;
-    background-image: url(img/phone.png);
-    
+    padding: 35px;
     margin: 3px;
+    color: black;
+    background-color: blanchedalmond;
   }
 
   .timeline li .timeline-image {
@@ -520,12 +525,15 @@ footer li {
 /* mobile phone */
 @media (max-width: 360px) {
   html {
-    font-size: 45%;
+    font-size: 40%;
   }
-
-  .simply-countdown > .simply-section {
+  .hero::before{
     background-image: url(img/phone.png);
-    padding: 27px;
+
+  }
+  .simply-countdown > .simply-section {
+
+    padding: 30px;
     margin: 3px;
   }
 
