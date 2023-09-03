@@ -189,7 +189,6 @@ body {
 
 }
 
-
 .story,
 .gallery,
 .rsvp,
@@ -426,9 +425,8 @@ footer li {
     padding: 70px;
        color: black;
     background-color: blanchedalmond;
-    filter: blur(5px);
+    
   }
-
 
   .home .heart {
     display: none;
