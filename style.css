@@ -22,7 +22,14 @@ body {
   background-position: center;
   z-index: -1;
   filter: none;
-  
+
+}
+
+}
+.nama_tamu {
+    color: black;
+    background-color: black;
+    
 }
 
 .hero {
@@ -187,7 +194,6 @@ body {
   border-radius: 25px 2px 25px 2px;
 
 
-}
 
 .story,
 .gallery,
@@ -425,7 +431,9 @@ footer li {
     padding: 70px;
        color: black;
     background-color: blanchedalmond;
+    filter: blur(5px);
   }
+
 
   .home .heart {
     display: none;
