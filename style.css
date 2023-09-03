@@ -40,7 +40,9 @@ body {
   font-family: 'Sacramento', cursive;
   font-size: 6rem;
   color: black;
+
 }
+
 
 .hero h4 {
   font-size: 1.6rem;
@@ -146,10 +148,11 @@ body {
 }
 
 .info {
-  background-color: #F8F0E5;
+  background-color: #f3fbff;
   color: black;
   padding-top: 10rem;
   padding-bottom: 8rem;
+  
 }
 
 .info .alamat {
@@ -425,7 +428,7 @@ footer li {
     padding: 70px;
        color: black;
     background-color: blanchedalmond;
-    
+
   }
 
   .home .heart {
