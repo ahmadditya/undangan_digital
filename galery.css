@@ -158,7 +158,7 @@ p {
       }
       
       
-.horizontal-scroll-wrapper {
+.horizontal-scroll-wrapper squares {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -169,6 +169,7 @@ p {
   overflow: scroll horizontal;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch horizontal;
+  transform-origin: right top;
   padding: 0;
   height: 100vw;
   perspective: 1px;
@@ -180,6 +181,7 @@ p {
   transform: rotate(90deg);
   display: flex;
   align-items: center;
+  transform-origin: right top;
   justify-content: center;
   min-height: 40vh;
   transform-origin: 50% 50%;
