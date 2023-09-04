@@ -165,19 +165,21 @@ p {
   width: 100vh;
   transform: rotate(-90deg) translate3d(0,-100vh,0);
   transform-origin: right top;
-  overflow-y: touch;
-  overflow: scroll horizontal;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch horizontal;
-  transform-origin: right top;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   padding: 0;
   height: 100vw;
+  
+  scroll-snap-align: start;
   perspective: 1px;
 	transform-style: preserve-3d;
   padding-bottom: 10rem;
   
 }
 .img-wrapper {
+    
+  scroll-snap-align: start;
   transform: rotate(90deg);
   display: flex;
   align-items: center;
