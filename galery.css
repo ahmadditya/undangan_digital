@@ -144,26 +144,7 @@ p {
         align-items: center;
       }
       
-* {
-    box-sizing: border-box;
-  }
-  
-  /* hide scrollbar */
-  ::-webkit-scrollbar {
-    width: 1px;
-    height: 1px;
-  }
-  
-  ::-webkit-scrollbar-button {
-    width: 1px;
-    height: 1px;
-  }
-  .external {
-    overflow: hidden;
-    height: 100vh;
-  }
-  
-  .horizontal-scroll-wrapper {
+.horizontal-scroll-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,60 +201,8 @@ p {
   .last {
     transform: rotate(90deg) translateZ(-.2px) scale(1.1) translateX(25vh) translateY(-8vh) ;
   }
-  .scroll-info, header {
-    position: absolute;
-    left: 1rem;
-  }
-  
-  
-  header {
-    bottom: 1rem;
-  }
-  .scroll-info {
-    top: 1rem;
-  }
-  a {
-    color: inherit;
-    font-weight: 500;
     
-  }
-  h1 {
-    font-weight: 300;
-    font-size: 1rem;
-  }
-  
-  .img-wrapper a {
-    overflow: hidden;
-    display: block;
-    padding: 1vh ;
-    background: #efecdb;
-    box-shadow: 0 10px 50px #5f2f1182;
-  }
-  img {
-    max-width: 45vh;
-    max-height: 50vh;
-    transition: .5s;
-    vertical-align: top;
-    filter: saturate(40%) sepia(30%) hue-rotate(5deg);
-  }
-  a:hover img {
-    filter: none;
-  }
-  p {
-    margin: 0;
-  }
-  .scroll-info {
-    display: flex;
-    align-items: center;
-  }
-  .icon svg {
-      width: 50px;
-      fill: currentcolor;
-  }
-  
-  
-  
-  
+
  
 
 }
