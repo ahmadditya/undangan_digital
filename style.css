@@ -191,9 +191,13 @@ body {
 
 
 }
-
+.gallery,{
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+  margin-top:-10rem;
+  margin-bottom: 2rem;
+}
 .story,
-.gallery,
 .rsvp,
 .gifts {
   padding-top: 10rem;
