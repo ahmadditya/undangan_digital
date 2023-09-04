@@ -8,16 +8,23 @@
 /* hide scrollbar */
 ::-webkit-scrollbar {
   width: 1px;
+  mouse-wheel:horizontal;
   height: 1px;
 }
 
 ::-webkit-scrollbar-button {
   width: 1px;
   height: 1px;
+  mouse-wheel:horizontal;
+
 }
 .external {
   overflow: hidden;
   height: 100vh;
+  overflow-y: scroll;
+  mouse-wheel:horizontal;
+
+
 }
 
 .horizontal-scroll-wrapper {
@@ -30,9 +37,11 @@
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0;
+  mouse-wheel:horizontal;
+
   height: 100vw;
   perspective: 1px;
-	transform-style: preserve-3d;
+    transform-style: preserve-3d;
   padding-bottom: 10rem;
 }
 .img-wrapper {
@@ -137,7 +146,7 @@ p {
         width: 1px;
         height: 1px;
   mouse-wheel:horizontal;
-  overflow-y: scroll;
+  overflow-y: left;
 
       }
       
@@ -145,7 +154,7 @@ p {
         width: 1px;
         height: 1px;
   mouse-wheel:horizontal;
-  overflow-y: scroll;
+  overflow-y: left;
 
       }
     .external {
@@ -166,9 +175,11 @@ p {
   width: 100vh;
   transform: rotate(-90deg) translate3d(0,-100vh,0);
   transform-origin: right top;
-  overflow-y: scroll;
+  overflow-y: horizontal;
   overflow-x: hidden;
   mouse-wheel:horizontal;
+  scroll-behavior: horizontal;
+  scroll-margin: horizontal;
   padding: 0;
   height: 100vw;
   perspective: 1px;
