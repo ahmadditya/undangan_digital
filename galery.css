@@ -1,6 +1,5 @@
 /* Inspired by this pen by Pieter Biesemans https://codepen.io/pieter-biesemans/pen/BQBWXX and My Mother Before Me project http://mymotherbeforeme.com/ */
-@import "https://unpkg.com/open-props";
-@import "https://unpkg.com/open-props/normalize.min.css";
+
 
 * {
   box-sizing: border-box;
@@ -22,13 +21,13 @@
 }
 
 .horizontal-scroll-wrapper {
-  display: block;
-  block-direction: column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100vh;
   transform: rotate(-90deg) translate3d(0,-100vh,0);
   transform-origin: right top;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   padding: 0;
   height: 100vw;
@@ -38,7 +37,7 @@
 }
 .img-wrapper {
   transform: rotate(90deg);
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   min-height: 40vh;
@@ -121,7 +120,7 @@ p {
   margin: 0;
 }
 .scroll-info {
-  display: block;
+  display: flex;
   align-items: center;
 }
 .icon svg {
@@ -134,7 +133,18 @@ p {
 
 /* mobile phone */
 @media (max-width: 576px) {
+    ::-webkit-scrollbar {
+        width: 1px;
+        height: 1px;
+      }
+      
+      ::-webkit-scrollbar-button {
+        width: 1px;
+        height: 1px;
+      }
     .external {
+      
+        
         width: auto;
         margin: 0;
         padding: 0;
@@ -142,63 +152,25 @@ p {
         justify-content: center;
         align-items: center;
       }
-
-      .horizontal-scroll-wrapper  {
-        --_spacer: var(--size-3);
-        display: grid;
-        gap: var(--_spacer);
-        grid-auto-flow: column;
-        grid-auto-columns: 21%;
-        padding: 0 var(--_spacer) var(--_spacer);
-        overflow-x: auto;
-        overscroll-behavior-inline: contain;
-      }
-      
-      .horizontal-scroll-wrapper --with-groups {
-        grid-auto-columns: 80%;
-      }
-      
-      .img-wrapper  {
-        display: grid;
-        gap: var(--_spacer);
-        grid-auto-flow: column;
-      }
-      
-    
-      
-      .img-wrapper > img {
-        inline-size: 100%;
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
-      }
-      
-      .snaps-inline {
-        scroll-snap-type: inline mandatory;
-        scroll-padding-inline: var(--_spacer, 1rem);
-      }
-      
-      .snaps-inline > * {
-        scroll-snap-align: start;
-      }
       
 .horizontal-scroll-wrapper {
-  display: block;
-  block-direction: column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100vh;
   transform: rotate(-90deg) translate3d(0,-100vh,0);
   transform-origin: right top;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   padding: 0;
-  height: 400vw;
+  height: 100vw;
   perspective: 1px;
-    transform-style: preserve-3d;
-  padding-bottom: 100rem;
+	transform-style: preserve-3d;
+  padding-bottom: 10rem;
 }
 .img-wrapper {
   transform: rotate(90deg);
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: center;
   min-height: 40vh;
