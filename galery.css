@@ -148,6 +148,7 @@ p {
         overflow: -moz-scrollbars-none;
         -ms-overflow-style: none;
           -webkit-overflow-scrolling: touch;
+          scroll-direction: horizontal;
       }
       
       ::-webkit-scrollbar-button {
