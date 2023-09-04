@@ -136,19 +136,18 @@ p {
     ::-webkit-scrollbar {
         width: 1px;
         height: 1px;
-        scroll-snap-type: inline mandatory;
-        scroll-padding-inline: var(--_spacer, 1rem);
-        
+  mouse-wheel:horizontal;
+  overflow-y: scroll;
+
       }
       
       ::-webkit-scrollbar-button {
         width: 1px;
         height: 1px;
-    scroll-snap-align: start;
+  mouse-wheel:horizontal;
+  overflow-y: scroll;
 
       }
-      
-
     .external {
       
         
@@ -167,8 +166,9 @@ p {
   width: 100vh;
   transform: rotate(-90deg) translate3d(0,-100vh,0);
   transform-origin: right top;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
+  mouse-wheel:horizontal;
   padding: 0;
   height: 100vw;
   perspective: 1px;
