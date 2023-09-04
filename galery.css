@@ -21,13 +21,13 @@
 }
 
 .horizontal-scroll-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  block-direction: column;
   align-items: center;
   width: 100vh;
   transform: rotate(-90deg) translate3d(0,-100vh,0);
   transform-origin: right top;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   padding: 0;
   height: 100vw;
@@ -37,7 +37,7 @@
 }
 .img-wrapper {
   transform: rotate(90deg);
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   min-height: 40vh;
@@ -120,7 +120,7 @@ p {
   margin: 0;
 }
 .scroll-info {
-  display: flex;
+  display: block;
   align-items: center;
 }
 .icon svg {
@@ -143,13 +143,13 @@ p {
       }
       
 .horizontal-scroll-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  block-direction: column;
   align-items: center;
   width: 100vh;
   transform: rotate(-90deg) translate3d(0,-100vh,0);
   transform-origin: right top;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   padding: 0;
   height: 400vw;
@@ -159,7 +159,7 @@ p {
 }
 .img-wrapper {
   transform: rotate(90deg);
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   min-height: 40vh;
