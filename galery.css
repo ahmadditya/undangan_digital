@@ -8,23 +8,16 @@
 /* hide scrollbar */
 ::-webkit-scrollbar {
   width: 1px;
-  mouse-wheel:horizontal;
   height: 1px;
 }
 
 ::-webkit-scrollbar-button {
   width: 1px;
   height: 1px;
-  mouse-wheel:horizontal;
-
 }
 .external {
   overflow: hidden;
   height: 100vh;
-  overflow-y: scroll;
-  mouse-wheel:horizontal;
-
-
 }
 
 .horizontal-scroll-wrapper {
@@ -37,11 +30,9 @@
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0;
-  mouse-wheel:horizontal;
-
   height: 100vw;
   perspective: 1px;
-    transform-style: preserve-3d;
+	transform-style: preserve-3d;
   padding-bottom: 10rem;
 }
 .img-wrapper {
@@ -142,31 +133,28 @@ p {
 
 /* mobile phone */
 @media (max-width: 576px) {
-    ::-webkit-scrollbar {
+    .external {
+        width: auto;
+        margin: 2;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+      }
+      ::-webkit-scrollbar {
         width: 1px;
         height: 1px;
-  mouse-wheel:horizontal;
-  overflow-y: left;
-
+        scrollbar-width: none;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+          -webkit-overflow-scrolling: touch;
       }
       
       ::-webkit-scrollbar-button {
         width: 1px;
         height: 1px;
-  mouse-wheel:horizontal;
-  overflow-y: left;
-
+        display: none;
       }
-    .external {
       
-        
-        width: auto;
-        margin: 0;
-        padding: 0;
-        
-        justify-content: center;
-        align-items: center;
-      }
       
 .horizontal-scroll-wrapper {
   display: flex;
@@ -175,16 +163,15 @@ p {
   width: 100vh;
   transform: rotate(-90deg) translate3d(0,-100vh,0);
   transform-origin: right top;
-  overflow-y: horizontal;
+  overflow-y: touch;
   overflow-x: hidden;
-  mouse-wheel:horizontal;
-  scroll-behavior: horizontal;
-  scroll-margin: horizontal;
+  -webkit-overflow-scrolling: touch;
   padding: 0;
   height: 100vw;
   perspective: 1px;
 	transform-style: preserve-3d;
   padding-bottom: 10rem;
+  
 }
 .img-wrapper {
   transform: rotate(90deg);
