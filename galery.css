@@ -136,12 +136,19 @@ p {
     ::-webkit-scrollbar {
         width: 1px;
         height: 1px;
+        scroll-snap-type: inline mandatory;
+        scroll-padding-inline: var(--_spacer, 1rem);
+        
       }
       
       ::-webkit-scrollbar-button {
         width: 1px;
         height: 1px;
+    scroll-snap-align: start;
+
       }
+      
+
     .external {
       
         
