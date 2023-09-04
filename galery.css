@@ -146,8 +146,8 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 400vh;
-  transform: rotate(-90deg) translate3d(0,-200vh,0);
+  width: 100vh;
+  transform: rotate(-90deg) translate3d(0,-100vh,0);
   transform-origin: right top;
   overflow-y: auto;
   overflow-x: hidden;
