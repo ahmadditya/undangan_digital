@@ -1,3 +1,14 @@
-/* Inspired by this pen by Pieter Biesemans https://codepen.io/pieter-biesemans/pen/BQBWXX and My Mother Before Me project http://mymotherbeforeme.com/ */
+const panels = document.querySelectorAll('.panel');
 
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses();
+        panel.classList.add('active');
+    })
+})
 
+function removeActiveClasses(){
+    panels.forEach(panel => {
+        panel.classList.remove('active');
+    })
+}
