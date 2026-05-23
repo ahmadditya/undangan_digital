@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
     rel="stylesheet">
 
   <!-- simplyCountdown -->
@@ -31,13 +31,15 @@
 <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:300,500" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
     <link  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+  <!-- Fix Favicon 404 Error -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="galery.css">
-  <link rel="stylesheet" href="smart.css">
 
 
       <!--=============== REMIXICONS ===============-->
@@ -56,7 +58,7 @@
 
   <section id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
-    <main>
+    <main data-aos="fade-down" data-aos-duration="2000">
       <h4>Kepada Bapak/Ibu/Saudara/i, </h4>
      <div style="color: black;  font-family: 'Chicle', cursive;">
        <h2><span></span></h2>
@@ -97,45 +99,67 @@
 
   <section id="home" class="home">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-          <h2>Acara Pernikahan</h2>
-          <h3>Diselenggarakan pada 20 November 2023 di Bandung, Jawa Barat.</h3>
-          <p>Oleh karena itu, d engan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir
-            pada acara pernikahan kami. </p>
+      <!-- Elegant Header -->
+      <div class="home-header text-center" data-aos="fade-up" data-aos-duration="1200">
+        <h2>Acara Pernikahan</h2>
+        
+        <div class="elegant-divider">
+          <span class="line"></span>
+          <i class="bi bi-heart-fill"></i>
+          <span class="line"></span>
         </div>
+
+        <h3>Diselenggarakan pada <span class="date">20 November 2023</span><br>
+            di <span class="location">Bandung, Jawa Barat</span></h3>
+
+        <p class="invitation-text">
+          Dengan segala hormat, kami bermaksud mengundang Bapak/Ibu, Saudara/i<br>
+          untuk hadir pada acara pernikahan kami.
+        </p>
       </div>
 
-      <div class="row couple">
-        <div class="col-lg-6">
-          <div class="row">
-            <div class="col-8 text-end">
-              <h3>Romeo</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque praesentium aut ipsa perferendis,
-                incidunt soluta?</p>
-              <p>Putra dari Bpk. Lorem <br> dan <br> Ibu Ipsum</p>
-            </div>
-            <div class="col-4">
-              <img src="img/938518_OC3QYY0.jpg" alt="Romeo " class="img-responsive rounded-circle">
+      <!-- Couple Section - Aesthetic & Responsive -->
+      <div class="couple-section">
+
+        <!-- Romeo -->
+        <div class="couple-card romeo" data-aos="fade-right" data-aos-duration="1400" data-aos-delay="200">
+          <div class="couple-photo">
+            <img src="img/938518_OC3QYY0.jpg" alt="Romeo" class="couple-img">
+            <div class="photo-ring"></div>
+          </div>
+          <div class="couple-info">
+            <h3>Romeo</h3>
+            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque praesentium aut ipsa perferendis.</p>
+            <div class="parents">
+              <span>Putra dari</span><br>
+              <strong>Bpk. Lorem &amp; Ibu Ipsum</strong>
             </div>
           </div>
         </div>
 
-        <span class="heart"><i class="bi bi-heart-fill"></i></span>
+        <!-- Romantic Heart -->
+        <div class="couple-heart" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+          <div class="heart-circle">
+            <i class="bi bi-heart-fill"></i>
+          </div>
+        </div>
 
-        <div class="col-lg-6">
-          <div class="row">
-            <div class="col-4">
-              <img src="img/8923572389.jpg" alt="Juliet" class="img-responsive rounded-circle">
-            </div>
-            <div class="col-8">
-              <h3>Juliet</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque praesentium aut ipsa perferendis,
-                incidunt soluta?</p>
-              <p>Putra dari Bpk. Ipsum <br> dan <br> Ibu Lorem</p>
+        <!-- Juliet -->
+        <div class="couple-card juliet" data-aos="fade-left" data-aos-duration="1400" data-aos-delay="200">
+          <div class="couple-photo">
+            <img src="img/8923572389.jpg" alt="Juliet" class="couple-img">
+            <div class="photo-ring"></div>
+          </div>
+          <div class="couple-info">
+            <h3>Juliet</h3>
+            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque praesentium aut ipsa perferendis.</p>
+            <div class="parents">
+              <span>Putri dari</span><br>
+              <strong>Bpk. Ipsum &amp; Ibu Lorem</strong>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -143,26 +167,19 @@
 
   <section id="info" class="info">
     <div class="container">
+
+
+      <!-- Header -->
       <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
+        <div class="col-md-8 col-10 text-center" data-aos="fade-up" data-aos-duration="1000">
           <h2>Informasi Acara</h2>
-          <p class="alamat">Alamat: blablablaaa. <br> Jalan.nin aja Kota Gorontalo</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.633758710693!2d123.09247897375796!3d0.5511038636250342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x327ed4b8b1a8e9b7%3A0x2ce74e01e91ee40f!2sADITYA.NET!5e0!3m2!1sid!2sid!4v1693662392126!5m2!1sid!2sid" 
-            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        
-
-          <a href="https://goo.gl/maps/R9seweCadg9MNyox5" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk
-            membuka peta</a>
-          <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak
-            ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</p>
         </div>
       </div>
 
+      <!-- Akad Nikah & Resepsi Cards (Original Simple Style) -->
       <div class="row justify-content-center mt-4">
-        <div class="col-md-5 col-10">
-          <div class="card text-center text-bg-light mb-5">
+        <div class="col-md-5 col-10" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="200">
+          <div class="card text-center text-bg-light mb-4">
             <div class="card-header">Akad Nikah</div>
             <div class="card-body">
               <div class="row justify-content-center">
@@ -174,22 +191,20 @@
                   <i class="bi bi-calendar3 d-block"></i>
                   <span>Minggu, 20 November 2023</span>
                 </div>
-                   <div class="col-md-6">
+                <div class="col-md-6">
                   <i class="bi bi-geo-alt d-block"></i>
-
-                  <span> Jalan.nin aja Kota Gorontaloh</span>
-              
+                  <span>Jalan.nin aja Kota Gorontaloh</span>
                 </div>
               </div>
             </div>
             <div class="card-footer">
-              <a href="https://goo.gl/maps/R9seweCadg9MNyox5" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk
-            membuka peta</a>
+              <a href="https://goo.gl/maps/R9seweCadg9MNyox5" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
             </div>
           </div>
         </div>
-        <div class="col-md-5 col-10">
-          <div class="card text-center text-bg-light">
+
+        <div class="col-md-5 col-10" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="400">
+          <div class="card text-center text-bg-light mb-4">
             <div class="card-header">Resepsi</div>
             <div class="card-body">
               <div class="row justify-content-center">
@@ -201,27 +216,47 @@
                   <i class="bi bi-calendar3 d-block"></i>
                   <span>Minggu, 20 November 2023</span>
                 </div>
-                 <div class="col-md-6">
+                <div class="col-md-6">
                   <i class="bi bi-geo-alt d-block"></i>
-                  <span> Jalan.nin aja Kota Gorontalo</span>
+                  <span>Jalan.nin aja Kota Gorontalo</span>
                 </div>
               </div>
             </div>
             <div class="card-footer">
-             <a href="https://goo.gl/maps/R9seweCadg9MNyox5" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk
-            membuka peta</a>
+              <a href="https://goo.gl/maps/R9seweCadg9MNyox5" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map di bawah card (simple & clean) -->
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-10 col-11 text-center">
+          <div class="map-container" data-aos="fade-up" data-aos-duration="1200">
+            <p class="alamat mb-2"><strong>Lokasi:</strong> Jalan.nin aja, Kota Gorontalo</p>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.633758710693!2d123.09247897375796!3d0.5511038636250342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x327ed4b8b1a8e9b7%3A0x2ce74e01e91ee40f!2sADITYA.NET!5e0!3m2!1sid!2sid!4v1693662392126!5m2!1sid!2sid" 
+              width="100%" 
+              height="280" 
+              style="border:0; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.1);" 
+              allowfullscreen="" 
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <a href="https://goo.gl/maps/R9seweCadg9MNyox5" target="_blank" class="btn btn-light btn-sm mt-3">Buka di Google Maps</a>
+            <p class="description mt-3" style="font-size: 0.9rem; color: #666;">
+              Diharapkan untuk tidak salah alamat dan tanggal.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
   <section id="story" class="story">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
+        <div class="col-md-8 col-10 text-center" data-aos="fade-up" data-aos-duration="1000">
           <span>Moment kami</span>
           <h2>Prewedding</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, similique non soluta nulla asperiores
@@ -229,23 +264,83 @@
         </div>
       </div>
 
-      <div class="row">
-      
-         
-            <li>
-              <div class="row justify-content-center">
-                <div class="youtube row justify-content-center">
-                   <iframe  src="https://www.youtube.com/embed/F0lowv3DyfI?si=xE69-0Vf6fvt3iZi&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
-               
-              </div>
+      <div class="prewed-swiper-wrapper" data-aos="zoom-in-up" data-aos-duration="1500">
 
-            </li>
-            
-             
-            </li>
-          </ul>
+        <!-- SWIPER PREWEDDING COVERFLOW -->
+        <div class="swiper gallery-cards prewed-swiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <article class="gallery__card">
+                <img src="img/bg-prewed.jpg" alt="Prewedding 1" class="gallery__img">
+                <div class="gallery__data">
+                  <h3 class="gallery__title">Romeo & Juliet</h3>
+                  <span class="gallery__subtitle">Prewedding Moment</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery__card">
+                <img src="https://picsum.photos/400/600?random=1" alt="Prewedding 2" class="gallery__img">
+                <div class="gallery__data">
+                  <h3 class="gallery__title">Romeo & Juliet</h3>
+                  <span class="gallery__subtitle">Prewedding Moment</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery__card">
+                <img src="https://picsum.photos/400/600?random=2" alt="Prewedding 3" class="gallery__img">
+                <div class="gallery__data">
+                  <h3 class="gallery__title">Romeo & Juliet</h3>
+                  <span class="gallery__subtitle">Prewedding Moment</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery__card">
+                <img src="https://picsum.photos/400/600?random=3" alt="Prewedding 4" class="gallery__img">
+                <div class="gallery__data">
+                  <h3 class="gallery__title">Romeo & Juliet</h3>
+                  <span class="gallery__subtitle">Prewedding Moment</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery__card">
+                <img src="https://picsum.photos/400/600?random=4" alt="Prewedding 5" class="gallery__img">
+                <div class="gallery__data">
+                  <h3 class="gallery__title">Romeo & Juliet</h3>
+                  <span class="gallery__subtitle">Prewedding Moment</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="gallery__card">
+                <img src="https://picsum.photos/400/600?random=5" alt="Prewedding 6" class="gallery__img">
+                <div class="gallery__data">
+                  <h3 class="gallery__title">Romeo & Juliet</h3>
+                  <span class="gallery__subtitle">Prewedding Moment</span>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+          <!-- Pagination dots -->
+          <div class="swiper-pagination"></div>
+
+          <!-- Nav arrows -->
+          <div class="swiper-button-prev"><i class="bi bi-chevron-left"></i></div>
+          <div class="swiper-button-next"><i class="bi bi-chevron-right"></i></div>
         </div>
+
+      </div>
      
     </div>
   </section>
@@ -254,7 +349,7 @@
   <section id="youtube" class="story">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
+        <div class="col-md-8 col-10 text-center" data-aos="fade-up" data-aos-duration="1000">
           <span>Bagaimana Cinta Kami Bersemi</span>
           <h2>Cerita Kami</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, similique non soluta nulla asperiores
@@ -265,7 +360,7 @@
       <div class="row">
         <div class="col">
           <ul class="timeline">
-            <li>
+            <li data-aos="fade-up" data-aos-duration="1500">
               <div class="timeline-image" style="background-image: url(img/sman23.jpg);"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -279,7 +374,7 @@
               </div>
 
             </li>
-            <li class="timeline-inverted">
+            <li class="timeline-inverted" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
               <div class="timeline-image" style="background-image: url(https://picsum.photos/300/300);"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -293,7 +388,7 @@
               </div>
 
             </li>
-            <li>
+            <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
               <div class="timeline-image" style="background-image: url(https://picsum.photos/301/301);"></div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -304,6 +399,7 @@
                 warong nasi kuning
                 </div>
               </div>
+
             </li>
           </ul>
         </div>
@@ -314,149 +410,41 @@
   <section id="gallery" class="gallery">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
+        <div class="col-md-8 col-10 text-center" data-aos="fade-up" data-aos-duration="1000">
           <span>Memori Kisah Kami</span>
           <h2>Galeri Foto</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, itaque?</p>
+          <p>Kenangan indah yang akan selalu kami ingat seumur hidup.</p>
         </div>
       </div>
 
-<center>
- 
-            <!-- =============== SWIPER GALLERY CARDS =============== -->
-            <div class="swiper gallery-cards">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <article class="gallery__card">
-                            <img src="assets/img/1.jpg" alt="image gallery" class="gallery__img">
-                            <div class="gallery__data">
-                                <h3 class="gallery__title">gambar</h3>
-                                <span class="gallery__subtitle">di sini yaa</span>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <article class="gallery__card">
-                            <img src="assets/img/2.jpg" alt="image gallery" class="gallery__img">
-                            <div class="gallery__data">
-                                <h3 class="gallery__title">gambar</h3>
-                                <span class="gallery__subtitle">di sini yaa</span>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <article class="gallery__card">
-                            <img src="assets/img/3.jpg" alt="image gallery" class="gallery__img">
-                            <div class="gallery__data">
-                                <h3 class="gallery__title">gambar</h3>
-                                <span class="gallery__subtitle">di sini yaa</span>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <article class="gallery__card">
-                            <img src="assets/img/4.jpg" alt="image gallery" class="gallery__img">
-                            <div class="gallery__data">
-                                <h3 class="gallery__title">gambar</h3>
-                                <span class="gallery__subtitle">di sini yaa</span>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <article class="gallery__card">
-                            <img src="assets/img/5.jpg" alt="image gallery" class="gallery__img">
-                            <div class="gallery__data">
-                                <h3 class="gallery__title">gambar</h3>
-                                <span class="gallery__subtitle">di sini yaa</span>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="swiper-slide">
-                        <article class="gallery__card">
-                            <img src="assets/img/6.jpg" alt="image gallery" class="gallery__img">
-                            <div class="gallery__data">
-                                <h3 class="gallery__title">gambar</h3>
-                                <span class="gallery__subtitle">di sini yaa</span>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="swiper-slide">
-                        <article class="gallery__card">
-                            <img src="assets/img/7.jpg" alt="image gallery" class="gallery__img">
-                            <div class="gallery__data">
-                                <h3 class="gallery__title">gambar</h3>
-                                <span class="gallery__subtitle">di sini yaa</span>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-
-            <!-- =============== SWIPER GALLERY THUMBNAIL =============== -->
-            <div class="gallery__overflow">
-                <div class="swiper gallery-thumbs">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="gallery__thumbnail">
-                                <img src="assets/img/1.jpg" alt="image thumbnail" class="gallery__thumbnail-img">
-                            </div>
-                        </div>
-    
-                        <div class="swiper-slide">
-                            <div class="gallery__thumbnail">
-                                <img src="assets/img/2.jpg" alt="image thumbnail" class="gallery__thumbnail-img">
-                            </div>
-                        </div>
-    
-                        <div class="swiper-slide">
-                            <div class="gallery__thumbnail">
-                                <img src="assets/img/3.jpg" alt="image thumbnail" class="gallery__thumbnail-img">
-                            </div>
-                        </div>
-    
-                        <div class="swiper-slide">
-                            <div class="gallery__thumbnail">
-                                <img src="assets/img/4.jpg" alt="image thumbnail" class="gallery__thumbnail-img">
-                            </div>
-                        </div>
-                        
-                        <div class="swiper-slide">
-                            <div class="gallery__thumbnail">
-                                <img src="assets/img/5.jpg" alt="image thumbnail" class="gallery__thumbnail-img">
-                            </div>
-                        </div>
-                         <div class="swiper-slide">
-                            <div class="gallery__thumbnail">
-                                <img src="assets/img/6.jpg" alt="image thumbnail" class="gallery__thumbnail-img">
-                            </div>
-                        </div> <div class="swiper-slide">
-                            <div class="gallery__thumbnail">
-                                <img src="assets/img/7.jpg" alt="image thumbnail" class="gallery__thumbnail-img">
-                            </div>
-                        </div>
-                    </div>
-    
-                    <!-- Swiper pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
-
-                <!-- Swiper arrows -->
-                <div class="swiper-button-next">
-                    <i class="ri-arrow-right-line"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="ri-arrow-left-line"></i>
-                </div>
-            </div>
+      <div class="gallery-grid" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+        <div class="gallery-grid-item">
+          <img src="img/bg-prewed.jpg" alt="Galeri 1" loading="lazy">
+          <div class="gallery-grid-overlay"><i class="bi bi-zoom-in"></i></div>
         </div>
-        </center>
-        
-    
-    </section>
+        <div class="gallery-grid-item">
+          <img src="https://picsum.photos/600/800?random=10" alt="Galeri 2" loading="lazy">
+          <div class="gallery-grid-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-grid-item">
+          <img src="https://picsum.photos/600/800?random=11" alt="Galeri 3" loading="lazy">
+          <div class="gallery-grid-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-grid-item">
+          <img src="https://picsum.photos/600/800?random=12" alt="Galeri 4" loading="lazy">
+          <div class="gallery-grid-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-grid-item">
+          <img src="https://picsum.photos/600/800?random=13" alt="Galeri 5" loading="lazy">
+          <div class="gallery-grid-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+        <div class="gallery-grid-item">
+          <img src="https://picsum.photos/600/800?random=14" alt="Galeri 6" loading="lazy">
+          <div class="gallery-grid-overlay"><i class="bi bi-zoom-in"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
     <!-- partial:index.partial.html -->
@@ -465,7 +453,7 @@
   <section id="rsvp" class="rsvp">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
+        <div class="col-md-8 col-10 text-center" data-aos="fade-up" data-aos-duration="1000">
           <h2>Konfirmasi Kehadiran</h2>
           <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
         </div>
@@ -473,7 +461,7 @@
 
       <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
         action="https://script.google.com/macros/s/AKfycbyddFbEJRqwEeA6OmZAuNf0jw_B30ZUOS5qSDwlAKV_nurcW7H6osJx2ZWnIeTmPm_35g/exec"
-        id="my-form">
+        id="my-form" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
         <div class="col-12">
           <div class="mb-3">
             <label for="nama" class="form-label">Nama</label>
@@ -533,7 +521,7 @@
   <section id="gifts" class="gifts">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
+        <div class="col-md-8 col-10 text-center" data-aos="fade-up" data-aos-duration="1000">
           <span>ungkapan tanda kasih</span>
           <h2>Terima Kasih</h2>
           <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.
@@ -602,9 +590,9 @@
 
   <script>
     simplyCountdown('.simply-countdown', {
-      year: 2023, // required
-      month: 9, // required
-      day: 20, // required
+      year: 2026, // required
+      month: 6, // required
+      day: 23, // required
       hours: 8, // Default is 0 [0-23] integer
       words: { //words displayed into the countdown
         days: { singular: 'hari', plural: 'hari' },
@@ -714,6 +702,16 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        
+        <!--=============== AOS JS ===============-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            once: false,
+            mirror: true
+          });
+        </script>
+
 
 
 </body>

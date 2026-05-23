@@ -1,26 +1,27 @@
-/*=============== SWIPER JS GALLERY ===============*/
-let swiperCards = new Swiper(".gallery-cards", {
-  loop: true,
-  loopedSlides: 5,
-  cssMode: true,
-  effect: 'fade',
-});
-  
-let swiperThumbs = new Swiper(".gallery-thumbs", {
-  loop: true,
-  loopedSlides: 5,
-  slidesPerView: 3,
+/*=============== SWIPER JS PREWEDDING (COVERFLOW) ===============*/
+let swiperCards = new Swiper(".prewed-swiper", {
+  effect: 'coverflow',
+  grabCursor: true,
   centeredSlides: true,
-  slideToClickedSlide: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
+  loop: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 30,
+    stretch: 0,
+    depth: 150,
+    modifier: 1,
+    slideShadows: true,
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".prewed-swiper .swiper-button-next",
+    prevEl: ".prewed-swiper .swiper-button-prev",
+  },
+  pagination: {
+    el: ".prewed-swiper .swiper-pagination",
+    clickable: true,
   },
 });
-
-swiperThumbs.controller.control = swiperCards;
